@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Welcome to Sinatra!</h1>
+  <p>Hello, world!</p>
+  <% if @word %>
+    <p>Anagrams for <%= params[:word]%><span id="grandma_says"><%= @word %></span>"</p>
+  <% end %>
+
+  <form action="/word" method="post">
+    What anagrams do you want to find?
+    <br>
+    <input type="text" name="user_input">
+    <input type="submit" value="Say it!">
+  </form>
+
+</div>
